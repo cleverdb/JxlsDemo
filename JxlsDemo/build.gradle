@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+
+repositories{
+	maven{
+		url 'http://maven.aliyun.com/nexus/content/groups/public'
+	}
+	mavenCentral()
+}
+dependencies{
+	compile group: 'org.jxls', name: 'jxls', version: '2.4.6'
+	compile group: 'net.sf.jxls', name: 'jxls-reader', version: '1.0.6'
+	compile group: 'org.jxls', name: 'jxls-jexcel', version: '1.0.7'
+	compile group: 'net.sf.jxls', name: 'jxls-core', version: '1.0.6'
+	compile group: 'org.jxls', name: 'jxls-poi', version: '1.0.15'
+}
+	
