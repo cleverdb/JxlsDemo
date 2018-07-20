@@ -9,10 +9,16 @@ repositories{
 	mavenCentral()
 }
 dependencies{
-	compile group: 'org.jxls', name: 'jxls', version: '2.4.6'
-	compile group: 'net.sf.jxls', name: 'jxls-reader', version: '1.0.6'
-	compile group: 'org.jxls', name: 'jxls-jexcel', version: '1.0.7'
-	compile group: 'net.sf.jxls', name: 'jxls-core', version: '1.0.6'
-	compile group: 'org.jxls', name: 'jxls-poi', version: '1.0.15'
+//	compile group: 'org.jxls', name: 'jxls', version: '2.4.6'
+//	compile group: 'net.sf.jxls', name: 'jxls-reader', version: '1.0.6'
+//	compile group: 'org.jxls', name: 'jxls-jexcel', version: '1.0.7'
+//	compile group: 'net.sf.jxls', name: 'jxls-core', version: '1.0.6'
+//	compile group: 'org.jxls', name: 'jxls-poi', version: '1.0.15'
+	compile fileTree(dir: 'lib' ,include : '*.jar')
+   compile 'org.apache.commons:commons-jexl:2.1.1'
+   compile 'commons-beanutils:commons-beanutils:1.9.2'
+   compile 'org.apache.poi:poi:3.17'
+   compile 'org.apache.poi:poi-ooxml:3.17'
+   compile 'org.apache.commons:commons-jexl:2.1.1'
 }
 	
